@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sound Visualiser</title>
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+  <div class="controls">
+    <button id="micBtn">Use Microphone</button>
+    <label class="file-label">
+      Choose audio file
+      <input id="fileInput" type="file" accept="audio/*">
+    </label>
+    <button id="stopBtn">Stop</button>
+  </div>
+
+  <canvas id="visualiser"></canvas>
+
+  <audio id="audioPlayer" controls hidden></audio>
+
+  <script src="porject.js"></script>
+</body>
+</html>

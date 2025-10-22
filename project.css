@@ -1,0 +1,32 @@
+:root{
+  --bg:#0b0f1a;
+  --accent:#4ee3a6;
+}
+html,body{
+  height:100%;
+  margin:0;
+  background:linear-gradient(180deg,var(--bg),#071022);
+  color:#ddd;
+  font-family:system-ui,Segoe UI,Roboto,Arial;
+}
+.controls{
+  display:flex;
+  gap:8px;
+  padding:12px;
+  align-items:center;
+}
+button, .file-label{
+  background:rgba(255,255,255,0.06);
+  color:var(--accent);
+  border:1px solid rgba(255,255,255,0.04);
+  padding:8px 12px;
+  border-radius:6px;
+  cursor:pointer;
+}
+.file-label input{ display:none; }
+
+canvas{
+  width:100%;
+  height:calc(100vh - 64px);
+  display:block;
+}
