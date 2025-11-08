@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Js Promises</h2>
+        <p id="demo"></p>
+        <script>
+            function myDisplayer(some) {
+                document.getElementById("demo").innerHTML = some;
+            }
+            function sum(a, b) {
+                var sum = a + b;
+                myDisplayer(sum);
+            }
+            let Promise = new Promise(function(myResolve, myReject)
+        {
+            Let x = 0;
+                
+                if (x == 0) {
+                    myResolve("OK");
+                } else {
+                    myReject("Error");
+                }
+        }); 
+                
+        </script>
+    </body>
+</html>
